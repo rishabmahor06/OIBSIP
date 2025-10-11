@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Tribute to Eleanor Vance</title>
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts for elegant typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom styles to integrate the fonts and add a few extra touches */
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #fdf8f0; /* A warm, creamy background */
+        color: #4a4a4a; /* Soft, dark gray for text */
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+        color: #2c3e50; /* A deep, elegant navy blue */
+      }
+      /* Style for the fade-in animation on scroll */
+      .scroll-animate {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .scroll-animate.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .hero-image {
+        height: 50vh;
+        background-image: url("https://placehold.co/1200x800/a2b9bc/ffffff?text=Inspiring+Leader");
+        background-size: cover;
+        background-position: center 70%;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Header Section -->
+    <header class="text-center p-8 md:p-12">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+        A Tribute to Eleanor Vance
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-600">
+        Pioneering Scientist, Compassionate Mentor, and an Endless Source of
+        Inspiration
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 md:px-8 max-w-4xl">
+      <!-- Hero Image -->
+      <div
+        class="scroll-animate my-8 md:my-12 rounded-lg shadow-2xl overflow-hidden hero-image"
+      >
+        <!-- The image is set via CSS background for better control -->
+      </div>
+
+      <!-- Introduction Section -->
+      <section class="scroll-animate my-12 md:my-16">
+        <h2
+          class="text-3xl md:text-4xl font-semibold border-b-2 border-amber-800 pb-2 mb-6"
+        >
+          A Life of Purpose
+        </h2>
+        <div class="space-y-4 text-base md:text-lg leading-relaxed">
+          <p>
+            There are some people who enter our lives and leave an indelible
+            mark, not just through their achievements, but through the quiet
+            power of their character. Eleanor Vance is one such person. To the
+            world, she is known for her groundbreaking research in astrophysics,
+            but to those who know her, she is a beacon of integrity, resilience,
+            and boundless kindness.
+          </p>
+          <p>
+            This page is a small token of admiration, an attempt to capture the
+            essence of what makes her so extraordinary. It’s a celebration of a
+            brilliant mind and an even more beautiful heart.
+          </p>
+        </div>
+      </section>
+
+      <!-- Qualities Section -->
+      <section
+        class="scroll-animate my-12 md:my-16 bg-white/60 p-6 md:p-8 rounded-lg shadow-lg backdrop-blur-sm"
+      >
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">What I Adore</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold text-amber-900 mb-2">
+              Unwavering Curiosity
+            </h3>
+            <p class="leading-relaxed">
+              Eleanor possesses a childlike wonder for the universe. She never
+              stops asking "why?" and this insatiable curiosity is infectious.
+              It’s a reminder to always look at the world with fresh eyes and to
+              never accept a simple answer when a more profound truth might be
+              waiting to be discovered.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-amber-900 mb-2">
+              Strength in Gentleness
+            </h3>
+            <p class="leading-relaxed">
+              In a world that often mistakes loudness for strength, Eleanor
+              demonstrates a powerful resilience rooted in gentleness. She leads
+              with empathy, listens more than she speaks, and has an incredible
+              ability to make everyone around her feel seen and valued. Her
+              strength is not in her voice, but in her steadfastness.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Gallery -->
+      <section class="scroll-animate my-12 md:my-16">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8">
+          Memorable Moments
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Image 1 -->
+          <div
+            class="transform hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="https://placehold.co/600x400/8d9db6/ffffff?text=Field+Research"
+              alt="Eleanor during field research"
+              class="w-full h-auto rounded-lg shadow-xl"
+            />
+            <p class="text-center mt-2 text-sm text-gray-600">
+              At the Atacama Observatory, 2018.
+            </p>
+          </div>
+          <!-- Image 2 -->
+          <div
+            class="transform hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="https://placehold.co/600x400/667292/ffffff?text=Mentoring"
+              alt="Eleanor mentoring a student"
+              class="w-full h-auto rounded-lg shadow-xl"
+            />
+            <p class="text-center mt-2 text-sm text-gray-600">
+              Guiding the next generation of scientists.
+            </p>
+          </div>
+          <!-- Image 3 -->
+          <div
+            class="transform hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="https://placehold.co/600x400/f1d4d4/ffffff?text=Public+Speaking"
+              alt="Eleanor giving a public speech"
+              class="w-full h-auto rounded-lg shadow-xl"
+            />
+            <p class="text-center mt-2 text-sm text-gray-600">
+              Sharing her passion with the world.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Thoughts -->
+      <section class="scroll-animate my-12 md:my-16 text-center">
+        <p class="text-xl md:text-2xl italic leading-loose">
+          "The measure of our impact is in the light we shine on others."
+        </p>
+        <p class="mt-2 text-lg">- A guiding principle she lives by.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 mt-12 bg-gray-100/50">
+      <p class="text-gray-600">Created with love and admiration. &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
