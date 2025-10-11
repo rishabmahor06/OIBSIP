@@ -1,0 +1,104 @@
+/* General Styling & Background */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f0f4f8;
+  --font-color: #333;
+  --accent-color: #3498db;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-color: #dcdcdc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: var(--font-color);
+}
+
+/* Main Converter Card */
+.converter-card {
+  background-color: var(--primary-color);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  width: 100%;
+  max-width: 450px;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.converter-card h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline effect for the title */
+.converter-card h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .converter-card {
+    padding: 25px;
+  }
+  .converter-card h1 {
+    font-size: 1.8rem;
+  }
+  .input-field {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+}
