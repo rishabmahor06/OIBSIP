@@ -1,0 +1,110 @@
+/* General Styling */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --bg-color: #1a1b28;
+  --main-color: #272a44;
+  --display-bg: #212437;
+  --text-color: #ffffff;
+  --operator-color: #ff9f0a;
+  --operator-hover: #ffb33c;
+  --special-color: #a5a5a5;
+  --special-hover: #c4c4c4;
+  --special-text: #1a1b28;
+  --key-color: #3b3e5e;
+  --key-hover: #4d517a;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #161726, #2e3150);
+}
+
+/* Calculator Body */
+.calculator {
+  width: 100%;
+  max-width: 340px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px var(--shadow);
+  overflow: hidden;
+}
+
+/* Display Screen */
+.calculator-display {
+  background-color: var(--display-bg);
+  color: var(--text-color);
+  width: 100%;
+  padding: 25px 20px;
+  text-align: right;
+  font-size: 2.8rem; /* Larger font for result */
+  font-weight: 300;
+  border: none;
+  outline: none;
+  /* To make sure text doesn't overflow */
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* Keys Container */
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+/* General Button Styling */
+button {
+  height: 65px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: var(--key-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: var(--key-hover);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Specific Button Types */
+.operator {
+  background-color: var(--operator-color);
+}
+
+.operator:hover {
+  background-color: var(--operator-hover);
+}
+
+.special {
+  background-color: var(--special-color);
+  color: var(--special-text);
+}
+
+.special:hover {
+  background-color: var(--special-hover);
+}
+
+/* Making the '0' button wider */
+.span-two {
+  grid-column: span 2;
+}
